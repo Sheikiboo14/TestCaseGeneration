@@ -1,0 +1,694 @@
+/* =========================
+   Global Styles
+========================= */
+/* body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app.light {
+  background: #f8f9fa;
+  color: #222;
+}
+
+.app.dark {
+  background: #1e1e2f;
+  color: #f0f0f0;
+} */
+
+/* =========================
+   Sidebar
+========================= */
+/* .sidebar {
+  width: 220px;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.collapse-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.sidebar nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.nav-item {
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.nav-item:hover {
+  background: #34495e;
+}
+
+.nav-text {
+  margin-left: 10px;
+}
+
+.sidebar-footer {
+  padding: 12px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-footer button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar-footer button:hover {
+  background: #2980b9;
+} */
+
+/* =========================
+   Main Content
+========================= */
+/* .main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
+}
+
+.left-column, .right-column {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.app.dark .left-column,
+.app.dark .right-column {
+  background: #2a2a3d;
+  color: white;
+} */
+
+/* =========================
+   Headers & Buttons
+========================= */
+/* .form-header, .right-column h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-all-btn {
+  background: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-all-btn:hover {
+  background: #c0392b;
+} */
+
+/* =========================
+   Table Styling
+========================= */
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #f4f4f4;
+  font-weight: bold;
+}
+
+.app.dark th {
+  background: #3b3b4f;
+}
+
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.app.dark tr:nth-child(even) {
+  background: #2f2f45;
+}
+
+tr:hover {
+  background: #eaf2f8;
+}
+
+.app.dark tr:hover {
+  background: #3d3d58;
+} */
+
+/* =========================
+   Buttons for Export
+========================= */
+/* .export-btn {
+  background: #27ae60;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+
+.export-btn:hover {
+  background: #1e8449;
+} */
+
+
+/* =========================
+   TestCase Form Styling
+========================= */
+/* .testcase-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 3px rgba(52, 152, 219, 0.6);
+}
+
+textarea {
+  min-height: 60px;
+} */
+
+/* =========================
+   Preview Table Actions
+========================= */
+/* table td button {
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+table td button:hover {
+  opacity: 0.9;
+}
+
+table td button:first-child {
+  background: #f1c40f;
+  margin-right: 6px;
+}
+
+table td button:last-child {
+  background: #e74c3c;
+  color: white;
+} */
+
+
+/* =========================
+   Modal Styling
+========================= */
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.app.dark .modal {
+  background: #2a2a3d;
+  color: white;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cancel-btn {
+  background: #7f8c8d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #707b7c;
+}
+
+.save-btn:hover {
+  background: #1e8449;
+} */
+
+/* =========================
+   Global Styles
+========================= */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app.light {
+  background: #f8f9fa;
+  color: #222;
+}
+
+.app.dark {
+  background: #1e1e2f;
+  color: #f0f0f0;
+}
+
+/* =========================
+   Sidebar
+========================= */
+.sidebar {
+  width: 220px;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  height: 100vh;       
+    position: sticky;
+  top: 0;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.collapse-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.sidebar nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.nav-item {
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.nav-item:hover {
+  background: #34495e;
+}
+
+.nav-text {
+  margin-left: 10px;
+}
+
+.sidebar-footer {
+  padding: 12px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-footer button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar-footer button:hover {
+  background: #2980b9;
+}
+
+/* =========================
+   Main Content
+========================= */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow: hidden;  /* prevent double scroll */
+}
+
+.dashboard-container {
+  display: flex;
+  gap: 20px;
+  height: calc(100vh - 40px); /* subtract padding */
+}
+
+/* =========================
+   Columns
+========================= */
+.left-column, .right-column {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  overflow-y: auto;  /* independent scroll */
+}
+
+.left-column {
+  flex: 0 0 400px;  /* fixed width form column */
+}
+
+.right-column {
+  flex: 1;          /* preview table takes remaining */
+}
+
+.app.dark .left-column,
+.app.dark .right-column {
+  background: #2a2a3d;
+  color: white;
+}
+
+/* =========================
+   Headers & Buttons
+========================= */
+.form-header, .right-column h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-all-btn {
+  background: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-all-btn:hover {
+  background: #c0392b;
+}
+
+/* =========================
+   Table Styling
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #f4f4f4;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.app.dark th {
+  background: #3b3b4f;
+}
+
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.app.dark tr:nth-child(even) {
+  background: #2f2f45;
+}
+
+tr:hover {
+  background: #eaf2f8;
+}
+
+.app.dark tr:hover {
+  background: #3d3d58;
+}
+
+/* =========================
+   Buttons for Export
+========================= */
+.export-btn {
+  background: #27ae60;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+
+.export-btn:hover {
+  background: #1e8449;
+}
+
+/* =========================
+   TestCase Form Styling
+========================= */
+.testcase-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 3px rgba(52, 152, 219, 0.6);
+}
+
+textarea {
+  min-height: 60px;
+}
+
+/* =========================
+   Preview Table Actions
+========================= */
+table td button {
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+table td button:hover {
+  opacity: 0.9;
+}
+
+table td button:first-child {
+  background: #f1c40f;
+  margin-right: 6px;
+}
+
+table td button:last-child {
+  background: #e74c3c;
+  color: white;
+}
+
+/* =========================
+   Modal Styling
+========================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.app.dark .modal {
+  background: #2a2a3d;
+  color: white;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cancel-btn {
+  background: #7f8c8d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #707b7c;
+}
+
+.save-btn:hover {
+  background: #1e8449;
+}
+
